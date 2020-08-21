@@ -1,0 +1,28 @@
+{
+  "name": "dzk",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.1",
+    "@noxify/gridsome-plugin-remark-embed": "^1.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "gridsome": "^0.7.20"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.4",
+    "babel-jest": "^24.5.0",
+    "jest": "^26.4.1",
+    "jest-serializer-vue": "^2.0.2",
+    "vue-jest": "^3.0.6",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
