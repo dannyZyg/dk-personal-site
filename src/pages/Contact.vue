@@ -1,16 +1,20 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
+    <ContactForm>
+    </ContactForm>
   </Layout>
 
 </template>
 
 
 <script>
+
+import ContactForm from '~/components/ContactForm.vue'
+
 export default {
+  components: {
+    ContactForm
+  },
   metaInfo: {
     title: 'Hello, world!'
   }

@@ -16,7 +16,8 @@
     "@noxify/gridsome-plugin-remark-embed": "^1.2.1",
     "babel-core": "^7.0.0-bridge.0",
     "gridsome": "^0.7.20",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.4",
