@@ -17,6 +17,7 @@ update: ## Update NPM
 	npm update
 
 deploy: ## Deploy to AWS
+	gridsome build
 	aws --profile ${DEPLOY_AWS_PROFILE} s3 sync dist s3://${DEPLOY_AWS_BUCKET} --delete
 	aws --profile ${DEPLOY_AWS_PROFILE} cloudfront create-invalidation \
 			--distribution-id ${DEPLOY_AWS_CLOUDFRONT_ID} \
