@@ -1,27 +1,11 @@
 <template>
   <div class="layout">
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Me</g-link>
-        <g-link class="nav__link" to="/contact">You</g-link>
-        <g-link class="nav__link" to="/experiments/">Experiments</g-link>
-      </nav>
-    </header>
     <slot/>
-    <div class="footer">
+    <div v-for="icon in footerLinks" :key="icon.title" class="footer">
       <div class="footer-link" >
-        <a href="https://github.com/dannyZyg" title="GitHub" class="icon-link ext-link" target="_blank">
-          <i class="fas fa-code-branch"></i>
-        </a>
-      </div>
-
-      <div class="footer-link" >
-        <a href="https://github.com/dannyZyg" title="LinkedIn" class="icon-link ext-link" target="_blank">
-          <i class="fab fa-linkedin"></i>
+        <a :href="icon.link" :title="icon.title" class="icon-link ext-link" target="_blank">
+          <font-awesome-icon :icon="[icon.faPrefix, icon.faIcon]" />
         </a>
       </div>
     </div>
@@ -41,20 +25,20 @@ export default {
   data()
   {
     return {
-      footerLinks: {
-        github: {
+      footerLinks: [
+        {
           title: 'GitHub',
-          text: 'code',
           link: 'https://github.com/dannyZyg',
-          icon: 'fas fa-code-branch'
+          faPrefix: 'fab',
+          faIcon: 'github'
         },
-        linkedin: {
+        {
           title: 'LinkedIn',
-          text: 'connect',
-          link: 'https://github.com/dannyZyg',
-          icon: 'fab fa-linkedin'
+          link: 'https://www.linkedin.com/in/danny-keig-3ab06a1b6/',
+          faPrefix: 'fab',
+          faIcon: 'linkedin'
         }
-      }
+      ]
     }
   }
 }
@@ -91,33 +75,31 @@ body {
   padding-right: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
 .nav__link {
   margin-left: 20px;
 }
 
 .footer {
   text-align: center;
+  display: inline-flex;
+  flex: row;
+  width: 70px;
+}
+
+.icon-link {
+  text-align: center;
+
 }
 
 .footer-link {
   line-height: 1.0;
+  font-size: 30px;
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   /* margin: 0.5rem; */
   margin:0px auto
 
-}
-
-.icon-link {
 }
 
 a {
