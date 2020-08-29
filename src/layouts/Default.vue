@@ -70,7 +70,8 @@ body {
 
 .layout {
   max-width: 760px;
-  margin: 0 auto;
+  margin: 60px auto;
+  margin-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
 }
