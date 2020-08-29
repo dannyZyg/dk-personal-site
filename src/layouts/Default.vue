@@ -1,6 +1,5 @@
 <template>
   <div class="layout">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <slot/>
     <div v-for="icon in footerLinks" :key="icon.title" class="footer">
       <div class="footer-link" >
