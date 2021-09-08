@@ -16,7 +16,7 @@ export default function (Vue, { router, head, isClient }) {
     faGithub
   )
   Vue.config.productionTip = false
-  
+
   Vue.use(Vuelidate)
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -24,5 +24,9 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
 	  src: 'https://kit.fontawesome.com/719ec3f2a9.js',
 	  crossorigin: 'anonymous'
+  })
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap'
   })
 }

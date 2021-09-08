@@ -54,18 +54,13 @@ export default {
 
 body {
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Inconsolata', monospace;
   background: #333333;
   color: var(--text-col);
   margin:0;
   padding:0;
   line-height: 1.5;
 }
-
-/* div { */
-/*   border: 0.1rem solid; */
-/*   border-color: yellow; */
-/* } */
 
 .layout {
   max-width: 760px;
@@ -97,7 +92,6 @@ body {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  /* margin: 0.5rem; */
   margin:0px auto
 
 }
