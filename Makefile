@@ -16,8 +16,8 @@ build: ## Build gridsome for production
 preview-build:
 	npx http-server ./dist
 
-update: ## Update NPM
-	npm update
+upgrade: ## Upgrade packages using yarn
+	yarn upgrade
 
 deploy: ## Deploy to AWS
 	gridsome build
