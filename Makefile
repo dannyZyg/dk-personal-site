@@ -13,6 +13,9 @@ dev: ## Start the gridsome development server
 build: ## Build gridsome for production
 	gridsome build
 
+preview-build:
+	npx http-server ./dist
+
 update: ## Update NPM
 	npm update
 
@@ -22,3 +25,4 @@ deploy: ## Deploy to AWS
 	aws --profile ${DEPLOY_AWS_PROFILE} cloudfront create-invalidation \
 			--distribution-id ${DEPLOY_AWS_CLOUDFRONT_ID} \
 			--paths "/*"
+
