@@ -11,14 +11,36 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-	    path: 'projects/**/*md',
+        path: 'projects/**/*md',
         typeName: 'Project',
         remark: {
-		  plugins: [
-			[ '@noxify/gridsome-plugin-remark-embed', {
-				'enabledProviders' : ['Vimeo', 'Youtube'],
-			}]
-		  ]
+          plugins: [
+            [
+              '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : [
+                  'Vimeo',
+                  'Youtube',
+                ],
+              }
+            ]
+          ]
+        }
+      },
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*md',
+        typeName: 'BlogPost',
+        remark: {
+          plugins: [
+            [
+              '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : [
+                  'Vimeo',
+                  'Youtube',
+                ],
+              }
+            ]
+          ]
         }
       }
     }
