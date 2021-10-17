@@ -7,6 +7,12 @@
 module.exports = {
   siteName: 'Danny Keig',
   siteDescription: 'software engineer',
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id'
+  },
+
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -30,6 +36,13 @@ module.exports = {
       options: {
         path: 'blog/**/*md',
         typeName: 'BlogPost',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        },
         remark: {
           plugins: [
             [

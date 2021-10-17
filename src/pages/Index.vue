@@ -24,6 +24,11 @@
       <div class="contact">
       Say hello -->> hello (AT) dannykeig (dot) com
       </div>
+
+      <!-- List posts -->
+      <div class="posts">
+        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      </div>
     </div>
   </Layout>
 </template>
@@ -34,11 +39,31 @@ query {
     siteName
     siteDescription
   }
+  posts: allBlogPost {
+    edges {
+      node {
+        id
+        title
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
+
+import PostCard from '~/components/PostCard.vue'
+
 export default {
+  components: {
+    PostCard
+  },
   data()
   {
     return {
@@ -74,5 +99,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
 
 </style>
