@@ -2,6 +2,8 @@
 title: Installing Arch Linux with full disk encryption (LUKS) while using LVM.
 tags: [linux, tech-diary]
 date: 2021-09-27
+published: true
+description: a description
 ---
 
 ***

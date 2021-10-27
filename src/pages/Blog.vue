@@ -5,7 +5,7 @@
 
 <page-query>
 query {
-  allBlogPost {
+  allPost {
     edges {
       node {
         id

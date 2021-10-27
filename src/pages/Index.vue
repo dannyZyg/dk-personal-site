@@ -39,11 +39,13 @@ query {
     siteName
     siteDescription
   }
-  posts: allBlogPost {
+
+  posts: allPost(filter: { published: { eq: true }}) {
     edges {
       node {
         id
         title
+        date (format: "D. MMMM YYYY")
         path
         tags {
           id

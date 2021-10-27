@@ -60,15 +60,12 @@ query Post ($id: ID!) {
     title
     path
     date (format: "D. MMMM YYYY")
-    timeToRead
     tags {
       id
       title
       path
     }
-    description
     content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>
