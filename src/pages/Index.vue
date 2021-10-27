@@ -3,7 +3,7 @@
     <h1>{{ $page.metadata.siteName }}</h1>
     <div class="content">
       <p>I am a {{ $page.metadata.siteDescription }} from Sydney, currently working as a full stack developer at
-        <a class="ext-link" href="https://goodpairdays.com/invite/CHILI216342/" target="#">Good Pair Days</a>.
+        <a class="ext-link" href="https://goodpairdays.com/" target="#">Good Pair Days</a>.
         Or is it fullstack, or full-stack...?
       </p>
       <p> My background is in music and audio engineering.
