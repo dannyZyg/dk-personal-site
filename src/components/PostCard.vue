@@ -30,6 +30,10 @@ export default {
 
 <style lang="scss">
 .post-card {
+  border: 2px solid var(--highlight);
+  border-radius: 15px;
+  padding: 25px;
+
   margin-bottom: var(--space);
   position: relative;
 
