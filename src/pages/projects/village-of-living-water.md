@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: The Village of Living Water
 tags: [creative-tech]
 image: village-of-living-water.gif

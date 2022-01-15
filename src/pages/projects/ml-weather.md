@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: Machine Learning Weather Visualisations
 tags: [creative-tech]
 image: ml-weather.gif

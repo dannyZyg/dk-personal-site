@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: Nexus
 tags: [creative-tech]
 image: ml-weather.gif

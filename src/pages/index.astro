@@ -1,0 +1,49 @@
+---
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import Button from '../components/Button.svelte';
+import Nav from '../components/Nav.svelte';
+import Footer from '../components/Footer.svelte';
+import PortfolioPreview from '../components/PortfolioPreview.svelte';
+
+// Data Fetching: List all Markdown posts in the repo.
+const projects = Astro.fetchContent('./projects/**/*.md');
+const featuredProject = projects[3];
+
+console.log(projects);
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <MainHead title="Danny Keig: Personal Site" description="Danny Keig: Computational Artist & Software Engineer" />
+  </head>
+  <body>
+    <Nav />
+    <header class="hero">
+      <div class="overlay">
+        <h1 class="title">
+  <!---
+          Danny Keig <small class="subtitle"> Computational Artist and Software Engineer</small>
+  --->
+        </h1>
+      </div>
+    </header>
+    <main class="wrapper mt4 mb4">
+      <div class="grid">
+        <div class="section">
+          <h3 class="sectionTitle">Selected Work</h3>
+          <PortfolioPreview project={featuredProject} />
+          <div class="tac mt4">
+            <a href="/projects">
+							<Button>View All</Button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+		<Footer />
+  </body>
+</html>

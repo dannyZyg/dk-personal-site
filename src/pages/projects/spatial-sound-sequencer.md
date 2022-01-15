@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: Spatial Sound Sequencer
 tags: [creative-tech]
 image: spatial-sound-sequencer.gif

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: Trapped Triangles
 tags: [creative-tech]
 image: trapped-triangles.gif

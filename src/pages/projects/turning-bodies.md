@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/project.astro
 title: Turning Bodies
 tags: [creative-tech]
 image: turning-bodies.gif

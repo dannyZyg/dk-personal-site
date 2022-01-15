@@ -1,5 +1,6 @@
 ---
-title: Nexus
+layout: ../../layouts/project.astro
+title: Fixative Forces
 tags: [creative-tech]
 image: fixative-forces.gif
 ---

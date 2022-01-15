@@ -1,7 +1,9 @@
 ---
+layout: ../../layouts/project.astro
 title: Computing The Microbiome
 tags: [creative-tech]
 image: microbe.gif
+description: Hey there
 ---
 
 https://vimeo.com/272347523
