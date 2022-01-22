@@ -3,9 +3,10 @@ layout: ../../layouts/project.astro
 title: Turning Bodies
 tags: [creative-tech]
 image: turning-bodies.gif
+video: https://vimeo.com/272347523
+description: 'Generative drawing exploring flow.'
+technology: [Processing]
 ---
-
-https://vimeo.com/272347523
 
 This piece explores the concept of flow, from motion phenomenas in the natural
 world to the enhanced state of mind found in creative tasks and meaningful
@@ -17,4 +18,3 @@ qualities and upon observation fosters meditative experiences. The work
 utilises flow fields and a group of animated bezier curves which are smoothly
 directed across the canvas.
 
-Technology: Processing

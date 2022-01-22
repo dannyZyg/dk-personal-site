@@ -18,12 +18,24 @@ const source = about[0].astro.source;
   <head>
     <MainHead title="Danny Keig: Personal Site" description="Danny Keig: Computational Artist & Software Engineer" />
   </head>
+  <style>
+    .content-text {
+      font-size: 1.4em;
+    }
+  </style>
   <body>
     <Nav />
     <header class="hero">
     </header>
-    <main>
+    <main class="content content-text">
       <Markdown content={source} />
+      <div class="links">
+        <ul>
+          <li>Find my Github here</li>
+          <li>Find my linkedin here</li>
+          <li>Email me here</li>
+        </ul>
+      </div>
     </main>
 		<Footer />
   </body>

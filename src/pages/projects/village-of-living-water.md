@@ -3,9 +3,10 @@ layout: ../../layouts/project.astro
 title: The Village of Living Water
 tags: [creative-tech]
 image: village-of-living-water.gif
+video: https://vimeo.com/272347523
+technology: [Max/MSP, Shaders, Hydrophone]
+description: 'Audiovisual reactive water.'
 ---
-
-https://vimeo.com/272347523
 
 This piece aims to explore symbiotic relationships found in nature, as well as
 trickle down effects and emergent properties of ecologies. The piece is
@@ -19,4 +20,3 @@ endangered practice which we could all learn from. I wanted to explore our
 relationship with water in a tactile way, by using water as an input method to
 Max, and seeding various events within the computer program with the live data.
 
-Technology: Max/MSP, Shaders, Hydrophone

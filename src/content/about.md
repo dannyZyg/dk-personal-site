@@ -2,20 +2,15 @@
 
 ---
 ###
-Danny Keig is an artist, musician and software engineer working with code.
+I make things with software - whether that be art and music or tools and applications.
 
-His two main areas of exploration are:
-- __Unpacking the natural world__: Appreciation and preservation of processes found in the natural world
+My background is in music and audio engineering. I've spent the last decade
+trying to get closer to the machine in my creative pursuits - the logical
+conclusion was programming. Along the way I discovered the joys of automation
+too.
 
-- __Securing the digital world__: Critique and undoing of the current mode of surveillance capitalism
+I am passionate about linux, neovim... in fact all free and open source software in general.
 
-With a deep background in audio, his current focus is on revisiting sound
-creation and processing through computer programming - whether that be utilising data
-sonification, generative and algorithmic composition or live coding.
+I have started [writing](https://www.s1t2.com.au/blog/experiential/interactive-audio-future) about my experience and I plan to do this more and more!
 
-He approaches hardware and software with curiosity and awe while maintaining
-skepticism and awareness of its blindspots. Danny investigates uses for technologies which sit outside
-of their intended purpose - to arrive at creative conclusions from data,
-algorithms and computational processes.
 
-His work has been exhibited blah blah...

@@ -3,9 +3,10 @@ layout: ../../layouts/project.astro
 title: Machine Learning Weather Visualisations
 tags: [creative-tech]
 image: ml-weather.gif
+video: https://vimeo.com/267225911
+technology: [Processing, OpenWeatherMap API, Wekinator & Machine Learning]
+description: 'Using ML to visualise city weather.'
 ---
-
-https://vimeo.com/290256701
 
 This project attempts to create a living program that visualises live weather
 conditions from around the world. The piece consists of three parts, a
@@ -26,4 +27,3 @@ outputs being based on training data. In a way, it is more inspired by the
 generative approaches to machine learning through deep learning than by any
 ‘mapped’ machine learning project.
 
-Technology: Processing, OpenWeatherMap API, Wekinator & Machine Learning

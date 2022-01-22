@@ -1,4 +1,46 @@
 :root {
-  --text-col: blue;
+  /* colours */
+  --c-yellow: #f3ff8f;
+  --c-dark-green: #000e10;
+  --c-salmon: #fa8686;
+  --c-ye: #000;
+  --c-black: black;
+  --c-light-green: #55d17b;
+  --c-light-grey: #dfe0e1;
+  --c-alt: #000;
+  --c-alt-bg: #000;
+  --c-light-blue: #65cdf5;
+
+  --text-col: var(--c-yellow);
+  --bg-col: var(--c-dark-green);
+
+  --active: var(--c-light-blue);
+  --inactive: var(--c-salmon);
+
+  --tag-col: var(--c-light-green);
+  --tag-text: var(--c-black);
+
+  --border-col: var(--c-light-grey);
+  --border-radius: 10px;
+
+  --alt-bg-col: var(--c-salmon);
+  --alt-col: var(--c-black);
+}
+
+body {
   font-family: 'Red Hat Mono', monospace;
+  background-color: var(--bg-col);
+  color: var(--text-col);
+}
+
+a {
+  color: var(--inactive)
+}
+a:focus,
+a:hover {
+  color: var(--active);
+}
+
+.content {
+  margin: 3rem;
 }

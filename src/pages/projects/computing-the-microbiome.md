@@ -1,12 +1,11 @@
 ---
 layout: ../../layouts/project.astro
 title: Computing The Microbiome
-tags: [creative-tech]
+tags: [creative-tech, computer vision, graphics]
 image: microbe.gif
-description: Hey there
+description: Computer vision reactions to micro organisms.
+technology: [openFrameworks, openCV]
 ---
-
-https://vimeo.com/272347523
 
 A collection of experiments stemming from a larger research project
 investigating speculative interactions between the human microbiome and
@@ -22,24 +21,6 @@ become a part of an artistic digital ecology. Here the experiments are
 embedded, for each pair, the original bacteria appear on the left and the
 computational ‘translation’ on the right.
 
-
-
-
-
-
-https://codesandbox.io/s/determined-albattani-jk41z?fontsize=14&hidenavigation=1&theme=dark&view=preview
-
-
-
-
-
-
-
-
-
-
-
-Technology: openFrameworks, openCV
 
 https://www.youtube.com/watch?v=HAqOPyHCQ9A
 
