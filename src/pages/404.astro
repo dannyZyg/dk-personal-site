@@ -2,7 +2,6 @@
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.svelte';
-import About from '../components/About.svelte';
 import Title from '../components/Title.svelte';
 
 const about = Astro.fetchContent('../content/about.md')[0];
@@ -13,6 +12,11 @@ const description = about.description;
 <html lang="en">
   <head>
     <MainHead title="Danny Keig: Personal Site" description={description} />
+    <style>
+      .oops {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -21,7 +25,12 @@ const description = about.description;
       </div>
     </header>
     <main>
-      <About {description} {source}/>
+      <div class="oops">
+        <h1>404</h1>
+        <div class="content">
+          Hmmm, looks like that page does not exist...
+        </div>
+      </div>
     </main>
 		<Footer />
   </body>
