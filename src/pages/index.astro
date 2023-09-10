@@ -1,28 +1,36 @@
 ---
-// Component Imports
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.svelte';
-import About from '../components/About.svelte';
-import Title from '../components/Title.svelte';
-
-const about = Astro.fetchContent('../content/about.md')[0];
-const source = about.astro.html;
-const description = about.description;
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
+<!doctype html>
 <html lang="en">
-  <head>
-    <MainHead title="Danny Keig: Personal Site" description={description} />
-  </head>
-  <body>
-    <header>
-      <div>
-        <Title {description} />
-      </div>
-    </header>
-    <main>
-      <About {description} {source}/>
-    </main>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>about</h1>
+			<p>
+        I make things with software - whether that be art and music or tools and applications.
+			</p>
+      <p>
+        My background is in music and audio engineering. I had spent a decade
+        trying to get closer to the machine in my creative pursuits - the logical
+        conclusion was programming. Along the way I discovered the joys of automation
+        too.
+      </p>
+			<p>
+        I am a passionate neovim user and am into odd keyboards.
+      </p>
+			<p>
+        I have started to update my <a href="/blog">blog</a> so please head over to have a read.
+			</p>
+      <p>You can reach me at <code>hello (at) dannykeig dot com</code></p>
+		</main>
 		<Footer />
-  </body>
+	</body>
 </html>
